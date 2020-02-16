@@ -21,6 +21,7 @@ import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.core.CloudSimTags;
 import org.cloudbus.cloudsim.core.SimEntity;
 import org.cloudbus.cloudsim.core.SimEvent;
+import org.serverless.planning.BHEFTPlanningAlgorithm;
 import org.workflowsim.planning.BasePlanningAlgorithm;
 import org.workflowsim.planning.DHEFTPlanningAlgorithm;
 import org.workflowsim.planning.HEFTPlanningAlgorithm;
@@ -189,6 +190,9 @@ public final class WorkflowPlanner extends SimEntity {
                 break;
             case DHEFT:
                 planner = new DHEFTPlanningAlgorithm();
+                break;
+            case BHEFT:
+                planner = new BHEFTPlanningAlgorithm();
                 break;
             default:
                 planner = null;

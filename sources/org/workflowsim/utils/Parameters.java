@@ -41,10 +41,10 @@ public class Parameters {
     
     /**
      * Planning Algorithm (Global Scheduling Algorithm)
-     * 
+     * added by cplayer: BHEFT
      */
     public enum PlanningAlgorithm{
-        INVALID, RANDOM, HEFT, DHEFT
+        INVALID, RANDOM, HEFT, DHEFT, BHEFT
     }
     
     /**
